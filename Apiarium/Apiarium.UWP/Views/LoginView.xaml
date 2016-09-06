@@ -8,7 +8,69 @@
     xmlns:views="using:MvvmCross.WindowsUWP.Views"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#2c3e50">
+        <Image Name="BackgroundImage" Stretch="None" Source="../Assets/honey.png"/>
+        <Grid HorizontalAlignment="Stretch" 
+              Margin="5,0,5,0" 
+              MaxWidth="400"
+              VerticalAlignment="Center" RowSpan="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
+            <Grid Grid.Row="1" ColumnSpan="1" BorderThickness="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Background="#FF005FD1">
+                    <Image Source="../Assets/user.png"/>
+                </Grid>
+                <TextBox Grid.Column="1"
+                         HorizontalAlignment="Stretch"
+                         FontSize="22" Foreground="White" 
+                         Height="60" Background="#FF005FD1"
+                         BorderThickness="0"/>
+            </Grid>
+            
+            <Grid Grid.Row="2" ColumnSpan="1" BorderThickness="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Background="#FF005FD1">
+                    <Image Source="../Assets/password.png"/>
+                </Grid>
+                <TextBox Grid.Column="1" FontSize="22" 
+                         Foreground="White" 
+                         Height="60" 
+                         Background="#FF005FD1" 
+                         BorderThickness="0"/>
+            </Grid>
+            <Button Grid.Row="3" 
+                    Height="60"
+                    Foreground="White"
+                    FontSize="20"
+                    VerticalAlignment="Stretch" 
+                    HorizontalAlignment="Stretch" 
+                    Background="#FF005FD1" Content="Entrar"/>
+
+            <Rectangle Grid.Row="4" Height="40"/>
+
+            <Button Grid.Row="5" 
+                    Margin="0,2,0,0"
+                    Height="60"
+                    Foreground="White"
+                    FontSize="20"
+                    VerticalAlignment="Stretch" 
+                    HorizontalAlignment="Stretch" 
+                    Background="#FF005FD1" Content="Entrar com Facebook"/>
+        </Grid>
     </Grid>
 </views:MvxWindowsPage>
+

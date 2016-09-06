@@ -1,7 +1,8 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-    "MvvmCross": "4.2.0"
+    "MvvmCross": "4.2.0",
+    "WindowsAzure.MobileServices": "1.3.2"
   },
   "frameworks": {
     "uap10.0": {}
